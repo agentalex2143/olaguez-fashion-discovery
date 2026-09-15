@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Olaguez Fashion Discovery</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem 4rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #fdfdfd;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e8e8e8; background: #15161a; }
+    a { color: #8ab4ff; }
+  }
+  h1 { font-size: 1.6rem; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.1rem; margin-top: 2rem; border-bottom: 1px solid #ddd; padding-bottom: 0.25rem; }
+  @media (prefers-color-scheme: dark) { h2 { border-bottom-color: #333; } }
+  .updated { color: #666; margin-top: 0; }
+  @media (prefers-color-scheme: dark) { .updated { color: #999; } }
+  a { color: #0b57d0; }
+  li { margin-bottom: 0.4rem; }
+</style>
+</head>
+<body>
+<h1>Privacy Policy — Olaguez Fashion Discovery</h1>
+<p class="updated">Last updated: 2026-09-14</p>
+
+<h2>What this project is</h2>
+<p>
+Olaguez Fashion Discovery is a pre-launch, personal software project built by
+one individual developer, Alexander Olaguez. It is not a company. It has no
+public users, no sign-up flow, and no live release. This policy describes
+what the project does and does not do with data today, and is written against
+the actual current design rather than a future plan.
+</p>
+
+<h2>Current status: no public users</h2>
+<p>
+There is no public product to sign up for. The only person who uses this
+project today is its developer, testing it against his own accounts, in order
+to evaluate whether the approach works before building it for anyone else. If
+that changes, this policy will be updated before it does, and any Pinterest
+integration expanded beyond this developer's own account would first go back
+through Pinterest's own review process for that change.
+</p>
+
+<h2>What data this project collects</h2>
+<p>
+By default: none. There is no account creation, no marketing site with
+tracking, and no analytics on any page hosting this policy.
+</p>
+<p>
+If a Pinterest account is connected (currently, only the developer's own
+account, for testing): with that account's authorization, the project reads
+that account's own boards and pins through Pinterest's API. It reads only the
+content belonging to the Pinterest account that connected &mdash; never
+another Pinterest user's boards or pins. Those images are processed in memory
+by a self-hosted, off-the-shelf image-recognition model with fixed,
+unchanging weights, producing a numerical description of visual style. That
+description is used to rank items from third-party resale marketplaces (for
+example, listings on eBay) so the connected account can see items similar to
+what it has pinned. Nothing about this process trains, fine-tunes, or
+otherwise changes the image-recognition model &mdash; it is identical before
+and after use.
+</p>
+
+<h2>What this project does not do</h2>
+<ul>
+  <li>It does not display, republish, share, or redistribute any Pinterest
+  content, to any other user or to any third party, anywhere.</li>
+  <li>It does not combine one person's Pinterest data with anyone else's data.</li>
+  <li>It does not store Pinterest images, pin text, board structure, or any
+  other Pinterest content beyond the single request that processes it. See
+  &ldquo;Retention and deletion&rdquo; below.</li>
+  <li>It does not sell, rent, or share any data with third parties for their
+  own purposes, including for advertising.</li>
+  <li>It does not run advertising, and does not use any data from Pinterest
+  to target advertising anywhere, on or off Pinterest.</li>
+  <li>It does not process payments, hold inventory, or handle any purchase.
+  Clicking through to a marketplace listing takes you to that marketplace's
+  own site, which has its own privacy policy governing what happens there
+  &mdash; this project does not see or receive anything about what happens
+  after that click.</li>
+</ul>
+
+<h2>Retention and deletion</h2>
+<p>
+Nothing derived from a connected Pinterest account is stored. Images, the
+numerical style description computed from them, and any other intermediate
+result exist only for the duration of the single request that produces them,
+and are discarded immediately afterward. There is currently no database, file
+store, log pipeline, or backup that this data passes through or persists in.
+</p>
+<p>
+If that ever changes &mdash; for example, if Pinterest grants permission for
+this project to store a derived style profile so a connected account does not
+have to reconnect every time &mdash; this policy will be updated before that
+storage begins, and it will describe: what is stored, for how long, and how
+to have it deleted. Any authorization to connect a Pinterest (or other)
+account can be revoked at any time by disconnecting it, which immediately
+invalidates the access token this project was using; no further requests can
+be made on that account's behalf after that.
+</p>
+
+<h2>Children's privacy</h2>
+<p>
+This project does not knowingly collect data from children and is not
+directed at children. Because there is no public sign-up, this has not yet
+been tested in practice; it will be revisited if the project moves toward
+having real, public users.
+</p>
+
+<h2>Changes to this policy</h2>
+<p>
+This is a living document for a project that does not yet have real users.
+It will be updated as the project's actual behavior changes, and the date at
+the top will reflect the most recent update. Material changes that would
+affect a connected Pinterest account will not be made silently.
+</p>
+
+<h2>Contact</h2>
+<p>
+Alexander Olaguez<br>
+<a href="mailto:alexanderolaguez04@gmail.com">alexanderolaguez04@gmail.com</a>
+</p>
+</body>
+</html>
